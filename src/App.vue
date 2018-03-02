@@ -9,11 +9,11 @@
 
     <ul>
       <li v-for="machine in machines" :key="machine.id">
-        {{ machine.id }} : {{ machine.name }} <toggle-button @change="onChangeEventHandler"/>
+        {{ machine.id }} : {{ machine.name }} <toggle-button v-model="machine.status" v-on:click="machine.status=true"/> Status: {{ machine.status }}
       </li>
     </ul>
 
-    </div>
+  </div>
 </template>
 
 <script>
@@ -26,9 +26,9 @@ export default {
       // machine2: 'Mac le macaque.',
       // machine3: 'Zézé le chimpanzé.',
       machines: [
-        {id:1, name:'Yvan l\'orang outan.'},
-        {id:2, name:'Mac le macaque.'},
-        {id:3, name:'Zézé le chimpanzé.'}
+        {id:1, name:'Yvan l\'orang outan.', status: false},
+        {id:2, name:'Mac le macaque.', status: false},
+        {id:3, name:'Zézé le chimpanzé.', status: false}
       ]
     }
   }
