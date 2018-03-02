@@ -17,12 +17,7 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Mes machines à monkeys...',
-      machines: [
-        {id:1, name:'Yvan l\'orang outan.', status: false},
-        {id:2, name:'Mac le macaque.', status: false},
-        {id:3, name:'Zézé le chimpanzé.', status: false}
-      ]
+      msg: 'La machine du jour...'
     }
   }
 }
