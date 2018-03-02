@@ -8,7 +8,7 @@
     <h2>Monkey machine #3: {{ machine3}}</h2> -->
 
     <ul>
-      <li v-for="machine in machines">
+      <li v-for="machine in machines" :key="machine.id">
         {{ machine.id }} : {{ machine.name }} <toggle-button @change="onChangeEventHandler"/>
       </li>
     </ul>
