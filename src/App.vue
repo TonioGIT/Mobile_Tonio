@@ -9,7 +9,7 @@
 
     <ul>
       <li v-for="machine in machines">
-        {{ machine.id }} : {{ machine.name }}
+        {{ machine.id }} : {{ machine.name }} <toggle-button @change="onChangeEventHandler"/>
       </li>
     </ul>
 
