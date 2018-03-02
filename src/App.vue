@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src='./assets/singe.jpg'>
     <h1>{{ msg }}</h1>
-    <h2>Au boulout... :(</h2>
+    <h2>Au boulooot... :(</h2>
     </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Mes machines à monkeys...'
     }
   }
 }
